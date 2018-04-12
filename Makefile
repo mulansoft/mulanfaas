@@ -1,7 +1,7 @@
 prepare: swarm-init install-faas-cli
 
 swarm-init:
-	docker swarm init
+	docker swarm init --advertise-addr eth0
 
 swarm-leave:
 	docker swarm leave --force
@@ -25,4 +25,5 @@ run-monitor:
 run: deploy-faas run-monitor
 
 down:
+	docker swarm leave --force
 	docker stack rm func

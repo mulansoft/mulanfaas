@@ -1,8 +1,28 @@
 version: "3.3"
 services:
-    gateway:
+    traefik:
+        image: traefik:v1.3
+        command: -c --docker=true
+            --docker.swarmmode=true
+            --docker.domain=traefik
+            --docker.watch=true
+            --web=true
+            --debug=true
+            --defaultEntryPoints='http'
+            --entryPoints='Name:http Address::80'
         ports:
+            - 80:80
             - 8080:8080
+        volumes:
+            - "/var/run/docker.sock:/var/run/docker.sock"
+        networks:
+            - functions
+        deploy:
+            placement:
+                constraints: [node.role == manager]
+    gateway:
+#        ports:
+#            - 8080:8080
         image: functions/gateway:0.7.9
         networks:
             - functions
@@ -17,6 +37,10 @@ services:
             direct_functions: "true"    # Functions are invoked directly over the overlay network
             direct_functions_suffix: ""
         deploy:
+            labels:
+                - traefik.port=8080
+                - traefik.frontend.rule=PathPrefix:/ui,/system,/function
+                - traefik.frontend.auth.basic=user:$$apr1$$B0dhdzez$$x/CVSO5OykseXnSSARQMy0 #copy/paste the contents of password.txt here
             resources:
                 # limits:   # Enable if you want to limit memory usage
                 #     memory: 200M
