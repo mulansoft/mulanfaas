@@ -1,0 +1,15 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "/Jd0TGt9/rBXEqcReYCpqoPtC+o=",
+			"path": "github.com/openfaas/faas",
+			"revision": "5644d6ab2003b4088992729ab45793240debda91",
+			"revisionTime": "2018-04-10T20:51:47Z",
+			"version": "0.7.9",
+			"versionExact": "0.7.9"
+		}
+	],
+	"rootPath": "github.com/mulanfaas"
+}
