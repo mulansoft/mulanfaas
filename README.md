@@ -47,6 +47,10 @@ You can fix it by run this command:
 $ docker swarm leave --force
 ```
 
+#### Install OpenFaaS CLI
+```bash
+$ make install-faas-cli
+```
 #### Run MulanFaaS
 
 ```

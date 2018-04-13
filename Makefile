@@ -1,4 +1,4 @@
-prepare: swarm-init install-faas-cli
+prepare: swarm-init
 
 swarm-init:
 	docker swarm init --advertise-addr eth0
