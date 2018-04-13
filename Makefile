@@ -26,4 +26,3 @@ run: deploy-faas run-monitor
 
 down:
 	docker swarm leave --force
-	docker stack rm func
