@@ -3,12 +3,78 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "EXTgr18s2tlxwaOjaZXMw75R6Bc=",
+			"path": "github.com/Sirupsen/logrus",
+			"revision": "778f2e774c725116edbc3d039dc0dfc1cc62aae8",
+			"revisionTime": "2018-03-29T22:59:52Z"
+		},
+		{
+			"checksumSHA1": "M8eZz0Vkey7lKVMhSV1mQPXhcGo=",
+			"path": "github.com/mulansoft/mgodb",
+			"revision": "74aefaa8f2bd2af797f01802b538a8d9f74c0819",
+			"revisionTime": "2018-04-16T02:39:03Z"
+		},
+		{
+			"checksumSHA1": "BHtVUCjgWdkDLQnYAHUEbdyBl14=",
+			"path": "github.com/mulansoft/mgodb/utils",
+			"revision": "74aefaa8f2bd2af797f01802b538a8d9f74c0819",
+			"revisionTime": "2018-04-16T02:39:03Z"
+		},
+		{
 			"checksumSHA1": "/Jd0TGt9/rBXEqcReYCpqoPtC+o=",
 			"path": "github.com/openfaas/faas",
 			"revision": "5644d6ab2003b4088992729ab45793240debda91",
 			"revisionTime": "2018-04-10T20:51:47Z",
 			"version": "0.7.9",
 			"versionExact": "0.7.9"
+		},
+		{
+			"checksumSHA1": "BGm8lKZmvJbf/YOJLeL1rw2WVjA=",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": "d6449816ce06963d9d136eee5a56fca5b0616e7e",
+			"revisionTime": "2018-04-11T15:42:50Z"
+		},
+		{
+			"checksumSHA1": "w3+nQnIha/VwmYfqIKnTPwDSBzo=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "2281fa97ef7b0c26324634d5a22f04babdac8713",
+			"revisionTime": "2018-04-13T14:10:16Z"
+		},
+		{
+			"checksumSHA1": "Dfz4tGItokMvHZENCsBmPPB8FGQ=",
+			"path": "golang.org/x/sys/windows",
+			"revision": "2281fa97ef7b0c26324634d5a22f04babdac8713",
+			"revisionTime": "2018-04-13T14:10:16Z"
+		},
+		{
+			"checksumSHA1": "1D8GzeoFGUs5FZOoyC2DpQg8c5Y=",
+			"path": "gopkg.in/mgo.v2",
+			"revision": "3f83fa5005286a7fe593b055f0d7771a7dce4655",
+			"revisionTime": "2016-08-18T02:01:20Z"
+		},
+		{
+			"checksumSHA1": "YsB2DChSV9HxdzHaKATllAUKWSI=",
+			"path": "gopkg.in/mgo.v2/bson",
+			"revision": "3f83fa5005286a7fe593b055f0d7771a7dce4655",
+			"revisionTime": "2016-08-18T02:01:20Z"
+		},
+		{
+			"checksumSHA1": "XQsrqoNT1U0KzLxOFcAZVvqhLfk=",
+			"path": "gopkg.in/mgo.v2/internal/json",
+			"revision": "3f83fa5005286a7fe593b055f0d7771a7dce4655",
+			"revisionTime": "2016-08-18T02:01:20Z"
+		},
+		{
+			"checksumSHA1": "LEvMCnprte47qdAxWvQ/zRxVF1U=",
+			"path": "gopkg.in/mgo.v2/internal/sasl",
+			"revision": "3f83fa5005286a7fe593b055f0d7771a7dce4655",
+			"revisionTime": "2016-08-18T02:01:20Z"
+		},
+		{
+			"checksumSHA1": "+1WDRPaOphSCmRMxVPIPBV4aubc=",
+			"path": "gopkg.in/mgo.v2/internal/scram",
+			"revision": "3f83fa5005286a7fe593b055f0d7771a7dce4655",
+			"revisionTime": "2016-08-18T02:01:20Z"
 		}
 	],
 	"rootPath": "github.com/mulanfaas"
